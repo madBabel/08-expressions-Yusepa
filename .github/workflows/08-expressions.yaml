@@ -40,7 +40,7 @@ jobs:
           echo "Workflow var: ${{ env.WORKFLOW_VAR }}" 
           echo "Overwritten: ${{ env.OVERWRITTEN }}"
           
-      - name: "Print Variables"
+      - name: "Overwrite and Print"
         env:
           OVERWRITTEN: 'Overwritten at step level'
         run: |
@@ -80,6 +80,6 @@ jobs:
         if: ${{ always() }}
         run: echo "This step runs unless the workflow is cancelled."
 
-      - name: "Print Always"
+      - name: "On Cancel"
         if: ${{ cancelled() }}
         run: echo "Workflow cancelled."
