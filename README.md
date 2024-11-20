@@ -118,6 +118,7 @@ Consolidar conocimientos sobre expresiones, variables de entorno y funciones en 
      3. Observar los resultados del flujo de trabajo. Confirma que el step `"Bug Check"` imprime el mensaje `"This PR fixes a bug."`. y se imprimen labels en el step print PR info
      4. Cambiar el título de la PR para que no incluya `"fix"` y volver a inspeccionar los resultados.
    * Cancelar manualmente el flujo nada mas iniciarlo en la ejeción para observar los pasos específicos relacionados con la cancelación. Fijarse en el step On Cancel
+   
 
 ---
 
